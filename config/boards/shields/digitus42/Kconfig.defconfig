@@ -1,0 +1,16 @@
+if SHIELD_DIGITUS_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Digitus 42"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DIGITUS_LEFT || SHIELD_DIGITUS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -25,10 +25,10 @@
        "&kp LSHFT",   "&trans", "&trans",   "&trans",   "&trans",    "&trans",           "&kp UNDER",  "&kp PLUS",        "&kp LBRC", "&kp RBRC", "&kp PIPE", "&kp TILDE",
                                           "&kp LGUI",   "&trans", "&kp SPACE",             "&kp RET",    "&trans",        "&kp RALT"
     ], [
-       "&trans", "&trans", "&trans", "&trans",       "&trans",       "&trans",                 "&trans",       "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&reset", "&trans", "&trans", "&trans", "&out OUT_USB", "&out OUT_BLE",           "&out OUT_BLE", "&out OUT_USB", "&trans", "&trans", "&trans", "&reset",
-       "&trans", "&trans", "&trans", "&trans",       "&trans",       "&trans",                 "&trans",       "&trans", "&trans", "&trans", "&trans", "&trans",
-                                     "&trans",       "&trans",       "&trans",                 "&trans",       "&trans", "&trans"
+       "&trans", "&trans", "&trans", "&bt BT_CLR",   "&bt BT_PRV",   "&bt BT_NXT",             "&bt BT_PRV",   "&bt BT_NXT", "&bt BT_CLR", "&trans", "&trans", "&trans",
+       "&reset", "&trans", "&trans",     "&trans", "&out OUT_USB", "&out OUT_BLE",           "&out OUT_BLE", "&out OUT_USB",     "&trans", "&trans", "&trans", "&reset",
+       "&trans", "&trans", "&trans",     "&trans",       "&trans",       "&trans",                 "&trans",       "&trans",     "&trans", "&trans", "&trans", "&trans",
+                                         "&trans",       "&trans",       "&trans",                 "&trans",       "&trans",     "&trans"
     ]
   ]
 }

@@ -1,5 +1,5 @@
-config SHIELD_DIGITUS_LEFT
-    def_bool $(shields_list_contains,digitus_left)
+config SHIELD_DIGITUS42_LEFT
+    def_bool $(shields_list_contains,digitus42_left)
 
-config SHIELD_DIGITUS_RIGHT
-    def_bool $(shields_list_contains,digitus_right)
+config SHIELD_DIGITUS42_RIGHT
+    def_bool $(shields_list_contains,digitus42_right)

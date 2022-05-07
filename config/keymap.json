@@ -29,6 +29,11 @@
        "&reset",      "&trans", "&trans",     "&trans", "&out OUT_USB", "&out OUT_BLE",           "&out OUT_BLE", "&out OUT_USB",     "&trans", "&trans",      "&trans", "&reset",
        "&trans", "&bootloader", "&trans",     "&trans",       "&trans",       "&trans",                 "&trans",       "&trans",     "&trans", "&trans", "&bootloader", "&trans",
                                               "&trans",       "&trans",       "&trans",                 "&trans",       "&trans",     "&trans"
-    ]
+    ],
+    [
+      "&none",       "&none",  "&none",   "&none", "&none", "&none", "&none",                "&none", "&none",  "&none",       "&none",  "&none",
+       "&none",     "&none",  "&none",      "&none",   "&none", "&none",          "&none", "&none",      "&none",  "&none",       "&none",  "&none",
+      "&none",  "&none",  "&none",      "&none",        "&none",        "&none",                "&none",        "&none",      "&none",  "&none",   "&none",  "&none",
+                                       "&none",        "&none",        "&none",                "&none",        "&none",      "&none"]
   ]
 }

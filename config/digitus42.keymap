@@ -2,6 +2,27 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+
+#define DEFAULT  0
+#define LOCK     4
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_goto_lock {
+            timeout-ms = <50>;
+            key-positions = <8 36 37 38 39 40 41>;
+            bindings = <&to LOCK>;
+        };
+        combo_exit_lock {
+            timeout-ms = <50>;
+            key-positions = <13 14 15 16 19 20 21 22>;
+            layers = <LOCK>;
+            bindings = <&to DEFAULT>;
+        };
+    };
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -36,6 +57,14 @@ raise_layer {
  &reset       &trans  &trans      &trans  &out OUT_USB  &out OUT_BLE          &out OUT_BLE  &out OUT_USB      &trans  &trans       &trans  &reset
  &trans  &bootloader  &trans      &trans        &trans        &trans                &trans        &trans      &trans  &trans  &bootloader  &trans
                                   &trans        &trans        &trans                &trans        &trans      &trans
+            >;
+          };
+        lock {
+          bindings = <
+ &none       &none  &none   &none &none &none &none                &none &none  &none       &none  &none
+  &none     &none  &none      &none   &none &none          &none &none      &none  &none       &none  &none
+ &none  &none  &none      &none        &none        &none                &none        &none      &none  &none   &none  &none
+                                  &none        &none        &none                &none        &none      &none
             >;
           };
         };

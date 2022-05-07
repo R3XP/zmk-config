@@ -7,11 +7,6 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp J   &kp D      &kp U      &kp A      &kp X            &kp P   &kp H      &kp L    &kp M   &kp W  &kp BSPC
  &kp LCTRL   &kp C   &kp T      &kp I      &kp E      &kp O            &kp B   &kp N      &kp R    &kp S   &kp G     &kp Q
@@ -20,11 +15,6 @@
             >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
     &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
@@ -33,11 +23,6 @@
             >;
                 };
 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
  &kp LCTRL    &trans  &trans    &trans    &trans     &trans          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
@@ -51,7 +36,7 @@ raise_layer {
  &reset       &trans  &trans      &trans  &out OUT_USB  &out OUT_BLE          &out OUT_BLE  &out OUT_USB      &trans  &trans       &trans  &reset
  &trans  &bootloader  &trans      &trans        &trans        &trans                &trans        &trans      &trans  &trans  &bootloader  &trans
                                   &trans        &trans        &trans                &trans        &trans      &trans
-          >;
-        };
+            >;
+          };
         };
 };

@@ -6,7 +6,8 @@
     "default_layer",
     "lower_layer",
     "raise_layer",
-    "control_layer"
+    "control_layer",
+    "lock"
   ],
   "layers": [
     [

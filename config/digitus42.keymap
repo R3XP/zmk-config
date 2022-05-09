@@ -88,6 +88,11 @@
 #define NAV      2
 #define LOCK     4
 
+// | SW0  | SW1  | SW2  | SW3  | SW4  | SW5  |                 | SW6  | SW7  | SW8  | SW9  | SW10 | SW11 |
+// | SW12 | SW13 | SW14 | SW15 | SW16 | SW17 |                 | SW18 | SW19 | SW20 | SW21 | SW22 | SW23 |
+// | SW24 | SW25 | SW26 | SW27 | SW28 | SW29 |                 | SW30 | SW31 | SW32 | SW33 | SW34 | SW35 |
+// |      |      |      |      | SW36 | SW37 | SW38 |   | SW39 | SW40 | SW41 |      |      |      |      |
+
 
 / {
     combos {
@@ -134,7 +139,7 @@
 
 
 
-        layer_raise {
+        layer_nav {
             bindings = <
    &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
     &trans    &trans  &trans    &trans    &trans     &trans          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE

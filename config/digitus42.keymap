@@ -173,7 +173,7 @@
         layer_navigation {
             bindings = <
     &kp TAB      &kp EXCL   &kp BSPC    &kp UP         &kp DEL       &kp PRCNT         &kp CARET    &kp N7    &kp N8  &kp N9  &kp RPAR   &kp BSPC
-    &kp LCTRL    &kp HOME   &kp LEFT    &kp DOWN       &kp RIGHT     &kp END           &kp ALT      &kp N4    &kp N5  &kp N6  &kp BSLH  &kp GRAVE
+    &kp LCTRL    &kp HOME   &kp LEFT    &kp DOWN       &kp RIGHT     &kp END           &kp LALT     &kp N4    &kp N5  &kp N6  &kp BSLH  &kp GRAVE
     &kp LSHFT    &kp LCTRL  &kp LCTRL   &kp LCTRL      &kp ENTER     &kp LCTRL         &kp UNDER    &kp N1    &kp N2  &kp N3  &kp PIPE  &kp TILDE
                                         &sd2 LALT LGUI  &trans        &to 1             &kp RET      &kp N0    &kp LALT
             >;

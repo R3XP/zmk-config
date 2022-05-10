@@ -86,12 +86,19 @@
 #define DEFAULT  0
 #define SYMBOL   1
 #define NAV      2
+#define CONTROL  3
 #define LOCK     4
+
 
 
 / {
     combos {
         compatible = "zmk,combos";
+        combo_goto_home {
+            timeout-ms = <10>;
+            key-positions = <15 16 19 20>;
+            bindings = <&to DEFAULT>;
+        };
         combo_goto_lock {
             timeout-ms = <50>;
             key-positions = <8 36 37 38 39 40 41>;
@@ -103,21 +110,50 @@
             layers = <LOCK>;
             bindings = <&to DEFAULT>;
         };
+        combo_control {
+            timeout-ms = <50>;
+            key-positions = <0 12 24>;
+            bindings = <&tog CONTROL>;
+        };
     };
-};
 
 
-/ {
+    behaviors {
+        mtog: move_or_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOVE_OR_TOGGLE";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            bindings = <&mo>, <&tog>;
+	    retro-tap;
+        };
+        td2: double_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_DOUBLE";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            bindings = <&kp>, <&kp>;
+        };
+        sd2: sticky_double_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "STICKY_TAP_DANCE_DOUBLE";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            bindings = <&kp>, <&sk>;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
 
         default_layer {
             bindings = <
-   &kp TAB   &kp J   &kp D             &kp U             &kp A      &kp X                   &kp P       &kp H      &kp L    &kp M   &kp W  &kp BSPC
- &kp LCTRL   &kp C   &kp T             &kp I             &kp E      &kp O                   &kp B       &kp N      &kp R    &kp S   &kp G     &kp Q
-     &mo 3   &kp F   &kp V  &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp SEMI                   &kp Z       &kp Y  &kp COMMA  &kp DOT   &kp K     &mo 3
-                                   &kp LCTRL         &kp SPACE &mo SYMBOL          &kp LEFT_SHIFT  &kp LSHIFT   &kp RALT
+   &kp TAB   &kp J   &kp D             &kp U             &kp A               &kp X                   &kp P       &kp H      &kp L    &kp M   &kp W  &kp BSPC
+ &kp LCTRL   &kp C   &kp T             &kp I             &kp E               &kp O                   &kp B       &kp N      &kp R    &kp S   &kp G     &kp Q
+     &none   &kp F   &kp V  &kp LEFT_BRACKET  &kp SINGLE_QUOTE            &kp SEMI                   &kp Z       &kp Y  &kp COMMA  &kp DOT   &kp K     &none
+                               &mtog NAV NAV         &kp SPACE &mtgo SYMBOL SYMBOL          &kp LEFT_SHIFT  &kp LSHIFT  &kp ALT
             >;
         };
 
@@ -134,12 +170,12 @@
 
 
 
-        layer_raise {
+        layer_navigation {
             bindings = <
-   &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
-    &trans    &trans  &trans    &trans    &trans     &trans          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
- &kp LSHFT    &trans  &trans    &trans    &trans     &trans          &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                              &kp LGUI    &trans      &to 1            &kp RET     &trans         &kp RALT
+    &kp TAB      &kp EXCL   &kp BSPC    &kp UP         &kp DEL       &kp PRCNT         &kp CARET    &kp N7    &kp N8  &kp N9  &kp RPAR   &kp BSPC
+    &kp LCTRL    &kp HOME   &kp LEFT    &kp DOWN       &kp RIGHT     &kp END           &kp ALT      &kp N4    &kp N5  &kp N6  &kp BSLH  &kp GRAVE
+    &kp LSHFT    &kp LCTRL  &kp LCTRL   &kp LCTRL      &kp ENTER     &kp LCTRL         &kp UNDER    &kp N1    &kp N2  &kp N3  &kp PIPE  &kp TILDE
+                                        &sd2 ALT LGUI  &trans        &to 1             &kp RET      &kp N0    &kp ALT
             >;
         };
 
@@ -147,10 +183,10 @@
 
         layer_control {
             bindings = <
- &trans       &trans  &trans  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT            &bt BT_PRV    &bt BT_NXT  &bt BT_CLR  &trans       &trans  &trans
- &reset       &trans  &trans      &trans  &out OUT_USB  &out OUT_BLE          &out OUT_BLE  &out OUT_USB      &trans  &trans       &trans  &reset
- &trans  &bootloader  &trans      &trans        &trans        &trans                &trans        &trans      &trans  &trans  &bootloader  &trans
-                                  &trans        &trans        &trans                &trans        &trans      &trans
+ &trans       &trans  &trans  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT            &bt BT_PRV    &bt BT_NXT    &bt BT_CLR       &trans       &trans  &trans
+ &reset       &trans  &trans      &trans  &out OUT_USB  &out OUT_BLE          &out OUT_BLE  &out OUT_USB        &trans       &trans       &trans  &reset
+ &trans  &bootloader  &trans      &trans        &trans        &trans                &trans  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bootloader  &trans
+                                  &trans        &trans        &trans                &trans        &trans        &trans
             >;
         };
 

@@ -16,7 +16,7 @@
            "&mo 3",  "&kp F",  "&kp V", "&kp LEFT_BRACKET", "&kp SINGLE_QUOTE", "&kp SEMI",                    "&kp Z",      "&kp Y", "&kp COMMA", "&kp DOT",  "&kp K",    "&mo 3",
                                                "&kp LCTRL",        "&kp SPACE",    "&to 1",           "&kp LEFT_SHIFT", "&kp LSHIFT",  "&kp RALT"
     ], [
-         "&kp TAB",          "&kp N1", "&kp LS(SLASH)",    "&kp RA(NUMBER_8)",      "&kp RA(NUMBER_9)",     "&kp GRAVE",                    "&kp EXCL",  "&kp NON_US_BSLH", "&kp LS(NON_US_BSLH)", "&kp RIGHT_PARENTHESIS",     "&kp LS(N6)",  "&kp BSPC",
+         "&kp TAB",          "&none", "&kp LS(SLASH)",    "&kp RA(NUMBER_8)",      "&kp RA(NUMBER_9)",     "&kp GRAVE",                    "&kp EXCL",  "&kp NON_US_BSLH", "&kp LS(NON_US_BSLH)", "&kp RIGHT_PARENTHESIS",     "&kp LS(N6)",  "&kp BSPC",
           "&tog 2",   "&kp RA(MINUS)",    "&kp LS(N7)",    "&kp RA(NUMBER_7)",      "&kp RA(NUMBER_8)",  "&kp LS(PLUS)",               "&kp LS(MINUS)", "&kp LS(NUMBER_8)",    "&kp LS(NUMBER_9)",             "&kp SLASH", "&kp LS(PERIOD)", "&kp RA(Q)",
        "&kp LSHFT", "&kp NON_US_HASH",    "&kp LS(N4)", "&kp RA(NON_US_BSLH)", "&kp RA(RIGHT_BRACKET)", "&kp LS(EQUAL)",           "&kp RIGHT_BRACKET", "&kp LS(NUMBER_5)",          "&kp LS(N2)",   "&kp LS(NON_US_HASH)",  "&kp LS(COMMA)", "&kp LCTRL",
                                                                    "&kp LGUI",             "&kp LCTRL",         "&mo 1",                     "&kp RET",        "&kp LCTRL",            "&kp RALT"
@@ -30,7 +30,7 @@
        "&reset",      "&trans", "&trans",     "&trans", "&out OUT_USB", "&out OUT_BLE",           "&out OUT_BLE", "&out OUT_USB",     "&trans", "&trans",      "&trans", "&reset",
        "&trans", "&bootloader", "&trans",     "&trans",       "&trans",       "&trans",                 "&trans",       "&trans",     "&trans", "&trans", "&bootloader", "&trans",
                                               "&trans",       "&trans",       "&trans",                 "&trans",       "&trans",     "&trans"
-    ], [
+    ], [ 
         "&none",  "&none",  "&none",  "&none",  "&none",  "&none",            "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
         "&none",  "&none",  "&none",  "&none",  "&none",  "&none",            "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
         "&none",  "&none",  "&none",  "&none",  "&none",  "&none",            "&none",  "&none",  "&none",  "&none",  "&none",  "&none",

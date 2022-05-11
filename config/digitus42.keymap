@@ -143,10 +143,10 @@
 
         default_layer {
             bindings = <
-   &kp TAB   &kp J   &kp D             &kp U             &kp A               &kp X                   &kp P       &kp H       &kp L      &kp M     &kp W    &kp BSPC
- &kp LCTRL   &kp C   &kp T             &kp I             &kp E               &kp O                   &kp B       &kp N       &kp R      &kp S     &kp G    &kp Q
-     &none   &kp F   &kp V  &kp LEFT_BRACKET             &kp SINGLE_QUOTE            &kp SEMI                   &kp Z       &kp Y       &kp COMMA  &kp DOT   &kp K    &none
-                               &mtog NAV NAV         &kp SPACE &mtog SYMBOL SYMBOL                   &kp LALT    &kp LSHIFT  &kp LALT
+   &kp TAB      &kp J   &kp D  &kp U              &kp A               &kp X                   &kp P       &kp H       &kp L      &kp M     &kp W    &kp BSPC
+   &kp LCTRL    &kp C   &kp T  &kp I              &kp E               &kp O                   &kp B       &kp N       &kp R      &kp S     &kp G    &kp Q
+   &kp LSHIFT   &kp F   &kp V  &kp LEFT_BRACKET   &kp SINGLE_QUOTE    &kp SEMI                &kp Z       &kp Y       &kp COMMA  &kp DOT   &kp K    &none
+                               &mtog NAV NAV         &kp SPACE &mtog SYMBOL SYMBOL            &kp LALT    &kp LSHIFT  &td0
             >;
         };
 
@@ -154,10 +154,10 @@
 
         layer_symbol {
             bindings = <
-   &kp TAB           &kp N1  &kp LS(SLASH)     &kp RA(NUMBER_8)       &kp RA(NUMBER_9)      &kp GRAVE                   &kp EXCL   &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp RIGHT_PARENTHESIS      &kp LS(N6)   &kp BSPC
-    &tog 2    &kp RA(MINUS)     &kp LS(N7)     &kp RA(NUMBER_7)       &kp RA(NUMBER_8)   &kp LS(PLUS)              &kp LS(MINUS)  &kp LS(NUMBER_8)     &kp LS(NUMBER_9)              &kp SLASH  &kp LS(PERIOD)  &kp RA(Q)
- &kp LSHFT  &kp NON_US_HASH     &kp LS(N4)  &kp RA(NON_US_BSLH)  &kp RA(RIGHT_BRACKET)  &kp LS(EQUAL)          &kp RIGHT_BRACKET  &kp LS(NUMBER_5)           &kp LS(N2)    &kp LS(NON_US_HASH)   &kp LS(COMMA)  &kp LCTRL
-                                                       &kp LGUI              &kp LCTRL          &mo 1                    &kp RET         &kp LCTRL             &kp RALT
+    &kp TAB    &kp N1           &kp LS(SLASH)  &kp RA(NUMBER_8)     &kp RA(NUMBER_9)      &kp GRAVE                   &kp EXCL   &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp RIGHT_PARENTHESIS      &kp LS(N6)   &kp BSPC
+    &none      &kp RA(MINUS)    &kp LS(N7)     &kp RA(NUMBER_7)     &kp RA(NUMBER_8)      &kp LS(PLUS)              &kp LS(MINUS)  &kp LS(NUMBER_8)     &kp LS(NUMBER_9)              &kp SLASH  &kp LS(PERIOD)  &kp RA(Q)
+    &kp LSHFT  &kp NON_US_HASH  &kp LS(N4)     &kp RA(NON_US_BSLH)  &kp RA(RIGHT_BRACKET) &kp LS(EQUAL)          &kp RIGHT_BRACKET  &kp LS(NUMBER_5)           &kp LS(N2)    &kp LS(NON_US_HASH)   &kp LS(COMMA)  &kp LCTRL
+                                &kp LGUI       &kp LCTRL            &mo 1                 &kp RET         &kp LCTRL             &kp RALT
             >;
         };
 
@@ -165,10 +165,10 @@
 
         layer_navigation {
             bindings = <
-    &kp TAB      &kp EXCL   &kp BSPC    &kp UP         &kp DEL       &kp PRCNT         &kp CARET    &kp N7    &kp N8  &kp N9  &kp RPAR   &kp BSPC
-    &kp LCTRL    &kp HOME   &kp LEFT    &kp DOWN       &kp RIGHT     &kp END           &kp LALT     &kp N4    &kp N5  &kp N6  &kp BSLH  &kp GRAVE
-    &kp LSHFT    &kp LCTRL  &kp LCTRL   &kp LCTRL      &kp ENTER     &kp LCTRL         &kp UNDER    &kp N1    &kp N2  &kp N3  &kp PIPE  &kp TILDE
-                                        &td0           &trans        &to 1             &kp RET      &kp N0    &kp LALT
+    &kp TAB      &kp EXCL   &kp BSPC    &kp UP         &kp DEL       &kp PRCNT              &kp CARET    &kp N7    &kp N8  &kp N9  &kp RPAR   &kp BSPC
+    &kp LCTRL    &kp HOME   &kp LEFT    &kp DOWN       &kp RIGHT     &kp END                &kp LALT     &kp N4    &kp N5  &kp N6  &kp BSLH  &kp GRAVE
+    &kp LSHFT    &kp LCTRL  &kp LCTRL   &kp LCTRL      &kp ENTER     &kp LCTRL              &kp UNDER    &kp N1    &kp N2  &kp N3  &kp PIPE  &kp TILDE
+                                        &td0           &trans        &to 1                  &kp RET      &trans    &N0
             >;
         };
 

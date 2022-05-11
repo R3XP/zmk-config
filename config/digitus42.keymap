@@ -95,7 +95,7 @@
     combos {
         compatible = "zmk,combos";
         combo_goto_home {
-            timeout-ms = <10>;
+            timeout-ms = <70>;
             key-positions = <15 16 19 20>;
             bindings = <&to DEFAULT>;
         };
@@ -145,7 +145,7 @@
             bindings = <
    &kp TAB   &kp J   &kp D             &kp U             &kp A               &kp X                   &kp P       &kp H       &kp L      &kp M     &kp W    &kp BSPC
  &kp LCTRL   &kp C   &kp T             &kp I             &kp E               &kp O                   &kp B       &kp N       &kp R      &kp S     &kp G    &kp Q
-     &none   &kp F   &kp V  &kp LEFT_BRACKET  &kp SINGLE_QUOTE            &kp SEMI                   &kp Z       &kp Y       &kp COMMA  &kp DOT   &kp K    &none
+     &none   &kp F   &kp V  &kp LEFT_BRACKET             &kp SINGLE_QUOTE            &kp SEMI                   &kp Z       &kp Y       &kp COMMA  &kp DOT   &kp K    &none
                                &mtog NAV NAV         &kp SPACE &mtog SYMBOL SYMBOL                   &kp LALT    &kp LSHIFT  &kp LALT
             >;
         };

@@ -187,7 +187,7 @@
 
         layer_default {
             bindings = <
-   &tdtabesc    &kp J   &kp D  &kp U              &kp A               &kp X                   &kp P       &kp H       &kp L      &kp M     &kp W    &kp BSPC
+   &d_esctab    &kp J   &kp D  &kp U              &kp A               &kp X                   &kp P       &kp H       &kp L      &kp M     &kp W    &kp BSPC
    &kp LCTRL    &kp C   &kp T  &kp I              &kp E               &kp O                   &kp B       &kp N       &kp R      &kp S     &kp G    &kp Q
    &kp LSHIFT   &kp F   &kp V  &kp LEFT_BRACKET   &kp SINGLE_QUOTE    &kp SEMI                &kp Z       &kp Y       &kp COMMA  &kp DOT   &kp K    &none
                                &mtog NAV NAV         &kp SPACE &mtog SYMBOL SYMBOL            &kp LSHFT   &mo 99  &td0

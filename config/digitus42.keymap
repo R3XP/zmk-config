@@ -127,7 +127,7 @@
             timeout-ms = <50>;
             key-positions = <8 36 37 38 39 40 41>;
             bindings = <&to LOCK>;
-        }
+        };
         combo_control {
             timeout-ms = <50>;
             key-positions = <0 12 24>;

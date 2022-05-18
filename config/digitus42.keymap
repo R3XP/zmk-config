@@ -101,8 +101,8 @@
         
 #define DANCE(NAME, B1, B2, B3, TERM) \
         d_##NAME: ##NAME { \
-            compatible = "zmk,behaviour-tap-dance" \
-            label = "NAME" \
+            compatible = "zmk,behaviour-tap-dance"; \
+            label = "NAME"; \
             #binding-cells = <0>; \
             tapping-term-ms = <TERM>; \
             bindings = <B1>, <B2>, <B3>; \

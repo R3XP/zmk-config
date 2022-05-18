@@ -100,7 +100,7 @@
 
         
 #define DANCE(NAME, B1, B2, B3, TERM) \
-        #NAME { \
+        ##NAME { \
             compatible = "zmk,behaviour-tap-dance" \
             label = "NAME" \
             #binding-cells = <0>; \

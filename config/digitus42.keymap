@@ -160,10 +160,17 @@
             tapping-term-ms = <300>;
             bindings = <&kp TAB>, <&kp ESC>;
         };
+        tdsymbol: symbol_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SYMBOL_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&mo NAV>, <&to NAV>;
+        };
         DANCE(esctab, &kp ESC   , &kp TAB   , &none, 300)
         DANCE(altgui, &kp LALT  , &kp LGUI  , &none, 300)
-        DANCE(nav,    &mo NAV   , &to NAV   , &none, 300)
         DANCE(symbol, &mo SYMBOL, &to SYMBOL, &none, 300)
+        DANCE(nav,    &mo NAV   , &to NAV   , &none, 300)
     };
 
 
@@ -194,7 +201,7 @@
    &d_esctab    &kp J   &kp D  &kp U              &kp A               &kp X                   &kp P       &kp H       &kp L      &kp M     &kp W    &kp BSPC
    &kp LCTRL    &kp C   &kp T  &kp I              &kp E               &kp O                   &kp B       &kp N       &kp R      &kp S     &kp G    &kp Q
    &kp LSHIFT   &kp F   &kp V  &kp LEFT_BRACKET   &kp SINGLE_QUOTE    &kp SEMI                &kp Z       &kp Y       &kp COMMA  &kp DOT   &kp K    &none
-                               &d_nav             &kp SPACE           &d_symbol               &kp LSHFT   &mo 1  &td0
+                               &d_nav             &kp SPACE           &tdsymbol              &kp LSHFT   &mo 1  &td0
             >;
         };
 

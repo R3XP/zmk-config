@@ -178,7 +178,7 @@
         };
         raise_nav {
             if-layers = <NAV 1>;
-            then-layer = <4>;
+            then-layer = <6>;
         };
     };
 

@@ -165,7 +165,7 @@
             label = "SYMBOL_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&mo NAV>, <&to NAV>;
+            bindings = <&mo SYMBOL>, <&to SYMBOL>;
         };
         DANCE(esctab, &kp ESC   , &kp TAB   , &none, 300)
         DANCE(altgui, &kp LALT  , &kp LGUI  , &none, 300)

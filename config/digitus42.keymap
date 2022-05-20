@@ -200,7 +200,7 @@
 
 
 
-        layer_symbol_raised {
+        raise {
             bindings = <
   &trans   &trans   &trans   &trans   &trans   &trans           &trans   &trans   &trans   &trans   &trans   &trans
   &trans   &trans   &trans   &trans   &trans   &trans           &trans   &trans   &trans   &trans   &trans   &trans

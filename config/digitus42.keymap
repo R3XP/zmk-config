@@ -162,8 +162,8 @@
         };
         DANCE(esctab, &kp ESC   , &kp TAB   , &none, 300)
         DANCE(altgui, &kp LALT  , &kp LGUI  , &none, 300)
-        DANCE(symbol, &mo SYMBOL, &to SYMBOL, &none, 300)
         DANCE(nav,    &mo NAV   , &to NAV   , &none, 300)
+        DANCE(symbol, &mo SYMBOL, &to SYMBOL, &none, 300)
     };
 
 

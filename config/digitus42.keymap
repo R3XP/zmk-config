@@ -220,9 +220,9 @@
         
         layer_default_raised {
             bindings = <
-  &trans   &trans   &trans   &kp DE_UE   &kp DE_AE   &trans           &trans   &trans   &trans   &trans     &trans   &trans
-  &trans   &trans   &trans   &trans      &kp RET     &kp DE_OE        &trans   &trans   &trans   &kp DE_SS  &trans   &trans
-  &trans   &trans   &trans   &trans      &trans      &trans           &trans   &trans   &trans   &trans     &trans   &trans
+  &trans   &trans   &trans   &kp DE_UE   &kp DE_AE   &trans           &trans   &trans   &trans   &trans     &trans     &trans
+  &trans   &trans   &trans   &trans      &kp RET     &kp DE_OE        &trans   &trans   &trans   &kp DE_SS  &sk LSHFT  &trans
+  &trans   &trans   &trans   &trans      &trans      &trans           &trans   &trans   &trans   &trans     &trans     &trans
                              &trans      &trans      &trans           &trans   &trans   &trans
             >;
         };

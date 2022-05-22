@@ -231,10 +231,10 @@
 
         layer_symbol {
             bindings = <
-    &trans     &trans           &kp LS(SLASH)  &kp RA(NUMBER_8)     &kp RA(NUMBER_9)            &kp GRAVE               &kp EXCL           &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp RIGHT_PARENTHESIS      &kp LS(N6)   &kp BSPC
-    &none      &kp RA(MINUS)    &kp LS(N7)     &kp RA(NUMBER_7)     &kp RA(NUMBER_8)            &kp LS(RIGHT_BRACKET)   &kp LS(MINUS)      &kp LS(NUMBER_8) &kp LS(NUMBER_9)     &kp SLASH  &kp LS(PERIOD)  &kp RA(Q)
-    &kp LSHFT  &kp NON_US_HASH  &kp LS(N4)     &kp RA(NON_US_BSLH)  &kp RA(RIGHT_BRACKET)       &kp LS(EQUAL)           &kp RIGHT_BRACKET  &kp LS(NUMBER_5) &kp LS(N2)           &kp LS(NON_US_HASH)   &kp LS(COMMA)  &kp LCTRL
-                                               &trans               &kp LCTRL                   &mo 1                       &kp RET        &trans           &kp RALT
+    &trans   &trans        &kp DE_UNDS   &kp DE_LBRC  &kp DE_RBRC   &kp DE_CIRC                &kp DE_EXLM  &kp DE_LABK   &kp DE_RABK   &kp DE_EQL   &kp DE_AMPR   &kp BSPC
+    &none    &kp DE_BSLS   &kp DE_SLSH   &kp DE_LCBR  &kp DE_RCBR   &kp DE_ASTR                &kp DE_QUES  &kp DE_LPRN   &kp DE_RPRN   &kp DE_MINS  &kp DE_COLN   &kp DE_AT
+    &trans   &kp DE_HASH   &kp DE_DLR    &kp DE_PIPE  &kp DE_TILD   &kp DE_GRV                 &kp DE_PLUS  &kp DE_PERC   &kp DE_DQUO   &kp DE_QUOT  &kp DE_SCLN   &kp LCTRL
+                                         &trans       &kp LCTRL     &mo 1                      &kp RET      &trans        &kp RALT
             >;
         };
 

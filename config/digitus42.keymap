@@ -138,35 +138,6 @@
 
 
     behaviors {
-        mtog: move_or_toggle {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOVE_OR_TOGGLE";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            bindings = <&mo>, <&tog>;
-	    retro-tap;
-        };
-        td0: sticky_double_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "STICKY_TAP_DANCE_DOUBLE";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp LALT>, <&kp LGUI>;
-        };
-        tdtabesc: tab_esc_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ESCAPE_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp TAB>, <&kp ESC>;
-        };
-        tdsymbol: symbol_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SYMBOL_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&mo SYMBOL>, <&to SYMBOL>;
-        };
         DANCE2(esctab, "esctab", &kp ESC   , &kp TAB   , 300)
         DANCE2(altgui, "altgui", &kp LALT  , &kp LGUI  , 300)
         DANCE2(symbol, "symbol", &mo SYMBOL, &to SYMBOL, 300)
@@ -255,7 +226,7 @@
     &kp TAB      &kp LS(TAB)  &kp BSPC    &kp UP         &kp DEL       &kp PRCNT              &kp CARET    &kp N7    &kp N8  &kp N9  &kp RPAR   &kp BSPC
     &kp LCTRL    &kp HOME     &kp LEFT    &kp DOWN       &kp RIGHT     &kp END                &kp LALT     &kp N4    &kp N5  &kp N6  &kp BSLH  &kp GRAVE
     &kp LSHFT    &kp LCTRL    &kp LCTRL   &kp LCTRL      &kp ENTER     &kp LCTRL              &kp UNDER    &kp N1    &kp N2  &kp N3  &kp PIPE  &kp TILDE
-                                          &td0           &trans        &to 1                  &kp RET      &trans    &kp N0
+                                          &d_altgui      &trans        &to 1                  &kp RET      &trans    &kp N0
             >;
         };
 

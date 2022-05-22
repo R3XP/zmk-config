@@ -180,11 +180,11 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         raise_default {
-            if-layers = <DEFAULT 1>;
+            if-layers  = <1>;
             then-layer = <2>;
         };
         raise_nav {
-            if-layers = <NAV 1>;
+            if-layers  = <NAV 1>;
             then-layer = <6>;
         };
     };
@@ -201,7 +201,7 @@
    &d_esctab    &kp J   &kp D  &kp U              &kp A               &kp X                   &kp P       &kp H       &kp L      &kp M     &kp W    &kp BSPC
    &kp LCTRL    &kp C   &kp T  &kp I              &kp E               &kp O                   &kp B       &kp N       &kp R      &kp S     &kp G    &kp Q
    &kp LSHIFT   &kp F   &kp V  &kp LEFT_BRACKET   &kp SINGLE_QUOTE    &kp SEMI                &kp Z       &kp Y       &kp COMMA  &kp DOT   &kp K    &none
-                               &d_nav             &kp SPACE           &tdsymbol              &kp LSHFT   &mo 1  &td0
+                               &d_nav             &kp SPACE           &d_symbol               &kp LSHFT   &mo 1       &td0
             >;
         };
 
@@ -252,10 +252,10 @@
 
         layer_navigation {
             bindings = <
-    &kp TAB      &kp EXCL   &kp BSPC    &kp UP         &kp DEL       &kp PRCNT              &kp CARET    &kp N7    &kp N8  &kp N9  &kp RPAR   &kp BSPC
-    &kp LCTRL    &kp HOME   &kp LEFT    &kp DOWN       &kp RIGHT     &kp END                &kp LALT     &kp N4    &kp N5  &kp N6  &kp BSLH  &kp GRAVE
-    &kp LSHFT    &kp LCTRL  &kp LCTRL   &kp LCTRL      &kp ENTER     &kp LCTRL              &kp UNDER    &kp N1    &kp N2  &kp N3  &kp PIPE  &kp TILDE
-                                        &td0           &trans        &to 1                  &kp RET      &trans    &kp N0
+    &kp TAB      &kp LS(TAB)  &kp BSPC    &kp UP         &kp DEL       &kp PRCNT              &kp CARET    &kp N7    &kp N8  &kp N9  &kp RPAR   &kp BSPC
+    &kp LCTRL    &kp HOME     &kp LEFT    &kp DOWN       &kp RIGHT     &kp END                &kp LALT     &kp N4    &kp N5  &kp N6  &kp BSLH  &kp GRAVE
+    &kp LSHFT    &kp LCTRL    &kp LCTRL   &kp LCTRL      &kp ENTER     &kp LCTRL              &kp UNDER    &kp N1    &kp N2  &kp N3  &kp PIPE  &kp TILDE
+                                          &td0           &trans        &to 1                  &kp RET      &trans    &kp N0
             >;
         };
 

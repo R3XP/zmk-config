@@ -99,10 +99,10 @@
         };
 
         
-#define DANCE(NAME, B1, B2, B3, TERM) \
+#define DANCE(NAME, LABEL, B1, B2, B3, TERM) \
         d_##NAME: ##NAME { \
             compatible = "zmk,behavior-tap-dance"; \
-            label = "##NAME"; \
+            label = ##LABEL; \
             #binding-cells = <0>; \
             tapping-term-ms = <TERM>; \
             bindings = <B1>, <B2>, <B3>; \
@@ -167,10 +167,10 @@
             tapping-term-ms = <300>;
             bindings = <&mo SYMBOL>, <&to SYMBOL>;
         };
-        DANCE(esctab, &kp ESC   , &kp TAB   , &none, 300)
-        DANCE(altgui, &kp LALT  , &kp LGUI  , &none, 300)
-        DANCE(symbol, &mo SYMBOL, &to SYMBOL, &none, 300)
-        DANCE(nav,    &mo NAV   , &to NAV   , &none, 300)
+        DANCE(esctab, "esctab", &kp ESC   , &kp TAB   , &none, 300)
+        DANCE(altgui, "altgui", &kp LALT  , &kp LGUI  , &none, 300)
+        DANCE(symbol, "symbol", &mo SYMBOL, &to SYMBOL, &none, 300)
+        DANCE(nav,    "nav"   , &mo NAV   , &to NAV   , &none, 300)
     };
 
 

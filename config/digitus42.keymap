@@ -109,11 +109,13 @@
         };
         
 
-#define MAC02(NAME, LABEL, B1, B2) \
+#define MAC02(NAME, LABEL, B1, B2, WAIT, TAP) \
         m_##NAME: ##NAME {  \
             label = ##LABEL; \
             compatible = "zmk,behavior-macro"; \
             #binding-cells = <0>; \
+            wait-ms = <WAIT>; \
+            tap-ms = <TAP>; \
             bindings \
                 = <B1> \
                 , <B2>; \
@@ -128,8 +130,8 @@
 
 / {
     macros {
-        MAC02(tick, "tick", &kp DE_GRV, &kp SPACE)
-        MAC02(circ, "circ", &kp DE_CIRC, &kp SPACE)
+        MAC02(tick, "tick", &kp DE_GRV,  &kp SPACE, 32, 32)
+        MAC02(circ, "circ", &kp DE_CIRC, &kp SPACE, 32, 32)
     };
 
 

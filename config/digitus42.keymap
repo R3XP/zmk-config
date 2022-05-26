@@ -127,6 +127,13 @@
 
 
 / {
+    macros {
+        MAC02(tick, "tick", &kp DE_GRV, &kp SPACE)
+        MAC02(circ, "circ", &kp DE_CIRC, &kp SPACE)
+    };
+
+
+
     combos {
         compatible = "zmk,combos";
         combo_goto_home {
@@ -213,9 +220,9 @@
 
         layer_symbol {
             bindings = <
-    &trans   &trans        &kp DE_UNDS   &kp DE_LBRC  &kp DE_RBRC   &kp DE_CIRC                &kp DE_EXLM  &kp DE_LABK   &kp DE_RABK   &kp DE_EQL   &kp DE_AMPR   &kp BSPC
+    &trans   &trans        &kp DE_UNDS   &kp DE_LBRC  &kp DE_RBRC   &m_circ                    &kp DE_EXLM  &kp DE_LABK   &kp DE_RABK   &kp DE_EQL   &kp DE_AMPR   &kp BSPC
     &none    &kp DE_BSLS   &kp DE_SLSH   &kp DE_LCBR  &kp DE_RCBR   &kp DE_ASTR                &kp DE_QUES  &kp DE_LPRN   &kp DE_RPRN   &kp DE_MINS  &kp DE_COLN   &kp DE_AT
-    &trans   &kp DE_HASH   &kp DE_DLR    &kp DE_PIPE  &kp DE_TILD   &kp DE_GRV                 &kp DE_PLUS  &kp DE_PERC   &kp DE_DQUO   &kp DE_QUOT  &kp DE_SCLN   &kp LCTRL
+    &trans   &kp DE_HASH   &kp DE_DLR    &kp DE_PIPE  &kp DE_TILD   &m_tick                    &kp DE_PLUS  &kp DE_PERC   &kp DE_DQUO   &kp DE_QUOT  &kp DE_SCLN   &kp LCTRL
                                          &trans       &kp LCTRL     &mo 1                      &kp RET      &trans        &kp RALT
             >;
         };

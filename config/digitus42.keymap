@@ -158,6 +158,14 @@
 
 
     behaviors {
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
         DANCE2(esctab, "esctab", &kp ESC   , &kp TAB   , 300)
         DANCE2(altgui, "altgui", &kp LALT  , &kp LGUI  , 300)
         DANCE2(symbol, "symbol", &mo SYMBOL, &to SYMBOL, 300)
@@ -211,9 +219,9 @@
         
         layer_default_raised {
             bindings = <
-  &trans   &trans   &trans   &kp DE_UE   &kp DE_AE   &trans           &trans   &trans   &trans   &trans     &trans     &trans
-  &trans   &trans   &trans   &trans      &kp RET     &kp DE_OE        &trans   &trans   &trans   &kp DE_SS  &sk LSHFT  &trans
-  &trans   &trans   &trans   &trans      &trans      &trans           &trans   &trans   &trans   &trans     &trans     &trans
+  &trans   &trans   &trans   &kp DE_UE   &kp DE_AE   &trans           &trans   &trans   &trans   &trans     &trans      &trans
+  &trans   &trans   &trans   &trans      &kp RET     &kp DE_OE        &trans   &trans   &trans   &kp DE_SS  &skq LSHFT  &trans
+  &trans   &trans   &trans   &trans      &trans      &trans           &trans   &trans   &trans   &trans     &trans      &trans
                              &trans      &trans      &trans           &trans   &trans   &trans
             >;
         };

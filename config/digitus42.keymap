@@ -93,7 +93,7 @@
 #define ALL_BUT_STENO   0, 1, 2, 3, 4, 5, 6, 7, 9
 
 
-#define xxxCOMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+#define COMBO(NAME, BINDINGS, KEYPOS, TERM, LAYERS) \
         combo_##NAME { \
             timeout-ms = <TERM>; \
             bindings = <BINDINGS>; \
@@ -141,22 +141,15 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_goto_home {
-            timeout-ms = <70>;
-            key-positions = <15 16 19 20>;
-            layers = <ALL_BUT_STENO>;
-            bindings = <&to DEFAULT>;
-        };
+        COMBO(go_home, &to DEFAULT, 15 16 19 20, 60, ALL_BUT_STENO)
         combo_goto_lock {
             timeout-ms = <50>;
             key-positions = <8 36 37 38 39 40 41>;
-            layers = <ALL_BUT_STENO>;
             bindings = <&to LOCK>;
         };
         combo_control {
             timeout-ms = <50>;
             key-positions = <0 12 24>;
-            layers = <ALL_BUT_STENO>;
             bindings = <&tog CONTROL>;
         };
     };

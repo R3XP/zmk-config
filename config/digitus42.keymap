@@ -90,7 +90,7 @@
 #define STENO    8
 #define LOCK     9
 
-#define ALL_BUT_STENO   0, 1, 2, 3, 4, 5, 6, 7, 9
+#define ALL_BUT_STENO   0 1 2 3 4 5 6 7 9
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS, TERM, LAYERS) \
@@ -145,11 +145,13 @@
         combo_goto_lock {
             timeout-ms = <50>;
             key-positions = <8 36 37 38 39 40 41>;
+            layers = <ALL_BUT_STENO>;
             bindings = <&to LOCK>;
         };
         combo_control {
             timeout-ms = <50>;
             key-positions = <0 12 24>;
+            layers = <ALL_BUT_STENO>;
             bindings = <&tog CONTROL>;
         };
     };

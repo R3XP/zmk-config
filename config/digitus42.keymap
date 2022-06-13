@@ -141,19 +141,9 @@
 
     combos {
         compatible = "zmk,combos";
-        COMBO(go_home, &to DEFAULT, 15 16 19 20, 60, ALL_BUT_STENO)
-        combo_goto_lock {
-            timeout-ms = <50>;
-            key-positions = <8 36 37 38 39 40 41>;
-            layers = <ALL_BUT_STENO>;
-            bindings = <&to LOCK>;
-        };
-        combo_control {
-            timeout-ms = <50>;
-            key-positions = <0 12 24>;
-            layers = <ALL_BUT_STENO>;
-            bindings = <&tog CONTROL>;
-        };
+        COMBO(go_home, &to DEFAULT, 15 16 19 20,      60, ALL_BUT_STENO)
+        COMBO(go_lock, &to LOCK, 8 36 37 38 39 40 41, 50, ALL_BUT_STENO)
+        COMBO(go_ctrl, &to CONTROL, 0 12 24,          50, ALL_BUT_STENO)
     };
 
 

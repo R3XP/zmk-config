@@ -87,11 +87,11 @@
 #define SYMBOL   3
 #define NAV      5
 #define CONTROL  7
-#define STENO    8
-#define LOCK     9
+#define STENO    9
+#define LOCK     10
 
-#define ALL_BUT_STENO   0 1 2 3 4 5 6 7 9
-#define ALL             ALL_BUT_STENO 8
+#define ALL_BUT_STENO   0 1 2 3 4 5 6 7 8 10
+#define ALL             ALL_BUT_STENO 9
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS, TERM, LAYERS) \

@@ -145,7 +145,7 @@
                 , <&macro_tap &kp T &kp G &tog STENO>
                 , <&macro_release &kp C>
                 ;
-        }
+        };
         plov_off: ploveroff {
             label = "stop_plover";
             compatible = "zmk,behavior-macro"; 
@@ -157,7 +157,7 @@
                 , <&macro_tap &kp T &kp R &tog STENO>
                 , <&macro_release &kp C>
                 ;
-        }
+        };
         MAC02(tick, "tick", &kp DE_GRV,  &kp SPACE, 32, 32)
         MAC02(circ, "circ", &kp DE_CIRC, &kp SPACE, 32, 32)
     };

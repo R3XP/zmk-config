@@ -311,7 +311,7 @@
 
         layer_steno {
             bindings = <
-  &trans   &trans   &trans   &trans   &trans   &trans           &plov_off &trans     &trans   &trans   &trans   &trans
+  &trans   &kp X    &kp X    &kp X    &kp X    &kp X            &plov_off &kp X      &kp X    &kp X    &kp X    &kp X 
   &trans   &trans   &trans   &trans   &trans   &trans           &trans    &trans     &trans   &trans   &trans   &trans
   &trans   &trans   &trans   &trans   &trans   &trans           &trans    &trans     &trans   &trans   &trans   &trans
                              &trans   &kp A    &kp D            &kp LEFT  &kp RIGHT  &trans

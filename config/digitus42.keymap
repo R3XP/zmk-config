@@ -134,6 +134,30 @@
 
 / {
     macros {
+        plov_on: ploveron {
+            label = "start_plover";
+            compatible = "zmk,behavior-macro"; 
+            #binding-cells = <0>; 
+            wait-ms = <20>; 
+            tap-ms = <20>; 
+            bindings
+                = <&macro_press &kp C>
+                , <&macro_tap &kp T &kp G &tog STENO>
+                , <&macro_release &kp C>
+                ;
+        }
+        plov_off: ploveroff {
+            label = "stop_plover";
+            compatible = "zmk,behavior-macro"; 
+            #binding-cells = <0>; 
+            wait-ms = <20>; 
+            tap-ms = <20>; 
+            bindings
+                = <&macro_press &kp C>
+                , <&macro_tap &kp T &kp R &tog STENO>
+                , <&macro_release &kp C>
+                ;
+        }
         MAC02(tick, "tick", &kp DE_GRV,  &kp SPACE, 32, 32)
         MAC02(circ, "circ", &kp DE_CIRC, &kp SPACE, 32, 32)
     };
@@ -211,7 +235,7 @@
         
         layer_default_raised {
             bindings = <
-  &trans   &trans   &trans            &kp DE_UE   &kp DE_AE   &trans           &tog STENO  &trans   &trans   &trans     &trans      &trans
+  &trans   &trans   &trans            &kp DE_UE   &kp DE_AE   &trans           &plov_on    &trans   &trans   &trans     &trans      &trans
   &trans   &trans   &kp LC(LA(TAB))   &trans      &kp RET     &kp DE_OE        &trans      &trans   &trans   &kp DE_SS  &skq LSHFT  &trans
   &trans   &trans   &trans            &trans      &trans      &trans           &trans      &trans   &trans   &trans     &trans      &trans
                                       &trans      &trans      &trans           &trans      &trans   &trans
@@ -287,7 +311,7 @@
 
         layer_steno {
             bindings = <
-  &trans   &trans   &trans   &trans   &trans   &trans           &trans    &trans     &trans   &trans   &trans   &trans
+  &trans   &trans   &trans   &trans   &trans   &trans           &plov_off &trans     &trans   &trans   &trans   &trans
   &trans   &trans   &trans   &trans   &trans   &trans           &trans    &trans     &trans   &trans   &trans   &trans
   &trans   &trans   &trans   &trans   &trans   &trans           &trans    &trans     &trans   &trans   &trans   &trans
                              &trans   &kp A    &kp D            &kp LEFT  &kp RIGHT  &trans

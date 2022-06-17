@@ -314,7 +314,7 @@
   &trans   &kp X    &kp X    &kp X    &kp X    &kp X            &plov_off &kp X      &kp X    &kp X    &kp X    &kp X 
   &trans   &trans   &trans   &trans   &trans   &trans           &trans    &trans     &trans   &trans   &trans   &trans
   &trans   &trans   &trans   &trans   &trans   &trans           &trans    &trans     &trans   &trans   &trans   &trans
-                             &trans   &kp A    &kp D            &kp LEFT  &kp RIGHT  &trans
+                             &trans   &kp A    &kp D            &kp L     &kp M      &trans
             >;
         };
 

@@ -216,7 +216,7 @@
    &d_esctab    &kp J   &kp D  &kp U              &kp A               &kp X                   &kp P       &kp H       &kp L      &kp M     &kp W    &kp BSPC
    &kp LCTRL    &kp C   &kp T  &kp I              &kp E               &kp O                   &kp B       &kp N       &kp R      &kp S     &kp G    &kp Q
    &kp LSHIFT   &kp F   &kp V  &kp LEFT_BRACKET   &kp SINGLE_QUOTE    &kp SEMI                &kp Z       &kp Y       &kp COMMA  &kp DOT   &kp K    &kp J
-                               &d_nav             &kp SPACE           &d_symbol               &kp LSHFT   &mo 1       &d_altgui
+                               &mo NAV            &kp SPACE           &mo SYMBOL              &kp LSHFT   &mo 1       &d_altgui
             >;
         };
 
@@ -235,7 +235,7 @@
         
         layer_default_raised {
             bindings = <
-  &trans   &trans   &trans            &kp DE_UE   &kp DE_AE   &trans           &plov_on    &trans   &trans   &trans     &trans      &trans
+  &trans   &trans   &trans            &kp DE_UE   &kp DE_AE   &trans           &trans      &trans   &trans   &trans     &trans      &trans
   &trans   &trans   &kp LC(LA(TAB))   &trans      &kp RET     &kp DE_OE        &trans      &trans   &trans   &kp DE_SS  &skq LSHFT  &trans
   &trans   &trans   &trans            &trans      &trans      &trans           &trans      &trans   &trans   &trans     &trans      &trans
                                       &trans      &trans      &trans           &trans      &trans   &trans
